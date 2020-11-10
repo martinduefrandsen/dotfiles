@@ -79,6 +79,8 @@ cask 'transmission'
 cask 'visual-studio-code'
 cask 'vlc'
 # cask 'whatsapp'
+cask flux
+cask messenger
 
 # Quicklook
 cask 'qlcolorcode'

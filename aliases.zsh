@@ -24,6 +24,16 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias php74="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:7.4"
 alias php8="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:8.0"
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
+# brew unlink php@7.4 && brew link --force --overwrite php@5.6
+
+# Install switch PHP
+# curl -L https://gist.githubusercontent.com/rhukster/f4c04f1bf59e0b74e335ee5d186a98e2/raw > /usr/local/bin/sphp
+# chmod +x /usr/local/bin/sphp
+# Example: sphp 7.2 (run in Terminal)
+
+# Install xebug on/off toggle (first install with pecl install xdebug and create its own conf file in /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini
+# curl -L https://gist.githubusercontent.com/rhukster/073a2c1270ccb2c6868e7aced92001cf/raw > /usr/local/bin/xdebug
+# chmod +x /usr/local/bin/xdebug
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
@@ -57,3 +67,8 @@ alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
+
+# Apache
+alias httpconfig="nano /usr/local/etc/httpd/httpd.conf"
+alias httpoff="sudo apachectl -k stop"
+alias httpon="sudo apachectl start"

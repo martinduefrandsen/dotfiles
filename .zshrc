@@ -112,3 +112,9 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Make a silly saying on new terminal
+fortune | cowsay | lolcat
+
+# Blank line
+echo

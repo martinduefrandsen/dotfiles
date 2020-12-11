@@ -23,6 +23,9 @@ brew 'svn'
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
+brew 'cowsay'
+brew 'fortune'
+brew 'figlet'
 
 # Spatie Medialibrary
 brew 'jpegoptim'

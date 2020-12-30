@@ -12,6 +12,7 @@ alias vimrc="vim $HOME/.vimrc"
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
+alias dev="cd $HOME/code"
 # alias lara="sites && cd laravel/"
 # alias docs="lara && cd docs/"
 

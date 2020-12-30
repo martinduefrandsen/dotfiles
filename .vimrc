@@ -19,6 +19,10 @@ Plugin 'itchyny/lightline.vim'
     set laststatus=2
     set noshowmode
 
+Plugin 'godlygeek/tabular'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'mg979/vim-visual-multi'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -50,3 +54,5 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+" set encoding=UTF-8

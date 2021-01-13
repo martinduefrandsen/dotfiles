@@ -13,8 +13,7 @@ alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 alias dev="cd $HOME/code"
-# alias lara="sites && cd laravel/"
-# alias docs="lara && cd docs/"
+alias workspace="cd $HOME/Workspace"
 
 # Laravel
 alias a="php artisan"
@@ -26,6 +25,7 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias php74="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:7.4"
 alias php8="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:8.0"
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
+
 # brew unlink php@7.4 && brew link --force --overwrite php@5.6
 
 # Install switch PHP

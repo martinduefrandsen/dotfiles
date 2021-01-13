@@ -26,6 +26,24 @@
 *.sql
 *.sqlite
 
+# Vim swap files
+######################
+.*.sw?
+
+# PhpStorm, VS Code, PHP etc.
+######################
+.idea
+.vscode
+.vagrant
+*.sublime-project
+
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+.phpunit-watcher-cache.php
+.phpunit.result.cache
+
 # OS generated files #
 ######################
 .DS_Store
@@ -35,6 +53,3 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-.idea/
-.vscode
-.vagrant/

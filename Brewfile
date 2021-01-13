@@ -26,6 +26,7 @@ brew 'zlib' # Needed for Memcached
 brew 'cowsay'
 brew 'fortune'
 brew 'figlet'
+brew 'lolcat'
 
 # Spatie Medialibrary
 brew 'jpegoptim'

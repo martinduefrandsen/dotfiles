@@ -6,11 +6,15 @@ alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-dire
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
+alias vimrc="vim $HOME/.vimrc"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
+alias dev="cd $HOME/code"
+# alias lara="sites && cd laravel/"
+# alias docs="lara && cd docs/"
 
 # Laravel
 alias a="php artisan"

@@ -11,8 +11,6 @@ alias c="clear"
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
-# alias lara="sites && cd laravel/"
-# alias docs="lara && cd docs/"
 
 # Laravel
 alias a="php artisan"
@@ -35,17 +33,14 @@ alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 # curl -L https://gist.githubusercontent.com/rhukster/073a2c1270ccb2c6868e7aced92001cf/raw > /usr/local/bin/xdebug
 # chmod +x /usr/local/bin/xdebug
 
+alias phpunit="vendor/bin/phpunit"
+alias phpunitw="phpunit-watcher watch"
+alias p="phpunit"
+alias pf="phpunit --filter "
+
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
-
-# Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
 
 # Docker
 alias docker-composer="docker-compose"
@@ -54,7 +49,7 @@ alias docker-composer="docker-compose"
 alias gst="git status"
 alias gb="git branch"
 alias gc="git checkout"
-alias gl="git log --oneline --decorate --color"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias amend="git add . && git commit --amend --no-edit"
 alias commit="git add . && git commit -m"
 alias diff="git diff"
@@ -72,3 +67,7 @@ alias wip="commit wip"
 alias httpconfig="nano /usr/local/etc/httpd/httpd.conf"
 alias httpoff="sudo apachectl -k stop"
 alias httpon="sudo apachectl start"
+
+# IP addresses
+alias ip="curl https://diagnostic.opendns.com/myip ; echo"
+alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"

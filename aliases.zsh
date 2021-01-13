@@ -6,6 +6,8 @@ alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-dire
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
+
+# Vim
 alias vimrc="vim $HOME/.vimrc"
 
 # Directories
@@ -22,32 +24,27 @@ alias seed="php artisan db:seed"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
-alias php74="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:7.4"
-alias php8="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:8.0"
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
-
-# brew unlink php@7.4 && brew link --force --overwrite php@5.6
-
-# Install switch PHP
-# curl -L https://gist.githubusercontent.com/rhukster/f4c04f1bf59e0b74e335ee5d186a98e2/raw > /usr/local/bin/sphp
-# chmod +x /usr/local/bin/sphp
-# Example: sphp 7.2 (run in Terminal)
-
-# Install xebug on/off toggle (first install with pecl install xdebug and create its own conf file in /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini
-# curl -L https://gist.githubusercontent.com/rhukster/073a2c1270ccb2c6868e7aced92001cf/raw > /usr/local/bin/xdebug
-# chmod +x /usr/local/bin/xdebug
-
+alias switch-php80="brew unlink php@7.4 && brew link --overwrite --force php"
+alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
 alias phpunit="vendor/bin/phpunit"
 alias phpunitw="phpunit-watcher watch"
 alias p="phpunit"
 alias pf="phpunit --filter "
 
+# or you could install "switch PHP"...
+# curl -L https://gist.githubusercontent.com/rhukster/f4c04f1bf59e0b74e335ee5d186a98e2/raw > /usr/local/bin/sphp
+# chmod +x /usr/local/bin/sphp
+# Example: sphp 7.4
+
+# also you could install "xdebug on/off toggle" (first install xdebug with pecl and create its own config file here: /usr/local/etc/php/{version}/conf.d/ext-xdebug.ini
+# curl -L https://gist.githubusercontent.com/rhukster/073a2c1270ccb2c6868e7aced92001cf/raw > /usr/local/bin/xdebug
+# chmod +x /usr/local/bin/xdebug
+# Example: xdebug on
+
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
-
-# Docker
-alias docker-composer="docker-compose"
 
 # Git
 alias gst="git status"

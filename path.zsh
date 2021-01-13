@@ -1,3 +1,6 @@
+# Because Brew doctor said so
+export PATH="/usr/local/sbin:$PATH"
+
 # Load Composer tools
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 

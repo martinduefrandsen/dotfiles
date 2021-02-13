@@ -17,6 +17,11 @@ alias sites="cd $HOME/Sites"
 alias dev="cd $HOME/code"
 alias workspace="cd $HOME/Workspace"
 
+# Files
+alias make1mb="mkfile 1m ./1MB.dat"
+alias make5mb="mkfile 5m ./5MB.dat"
+alias make10mb="mkfile 10m ./10MB.dat"
+
 # Laravel
 alias a="php artisan"
 alias fresh="php artisan migrate:fresh --seed"
@@ -72,3 +77,5 @@ alias httpon="sudo apachectl start"
 # IP addresses
 alias ip="curl https://diagnostic.opendns.com/myip ; echo"
 alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+alias openports="sudo lsof -i | grep LISTEN"
+alias blockedports="sudo ipfw list"

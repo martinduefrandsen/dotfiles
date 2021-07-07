@@ -38,8 +38,6 @@ brew 'gifsicle'
 # Development
 brew 'php'
 brew 'php@7.4'
-brew 'php@7.3'
-brew 'php@7.2'
 brew 'composer'
 brew 'imagemagick'
 brew 'libmemcached'
@@ -67,8 +65,8 @@ cask 'sublime-text'
 cask 'tableplus'
 cask 'visual-studio-code'
 cask 'vlc'
-cask flux
-cask messenger
+cask 'flux'
+cask 'messenger'
 
 # Quicklook
 cask 'qlcolorcode'

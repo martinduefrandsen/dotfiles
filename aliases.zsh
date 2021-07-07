@@ -37,11 +37,6 @@ alias phpunitw="phpunit-watcher watch"
 alias p="phpunit"
 alias pf="phpunit --filter "
 
-# or you could install "switch PHP"...
-# curl -L https://gist.githubusercontent.com/rhukster/f4c04f1bf59e0b74e335ee5d186a98e2/raw > /usr/local/bin/sphp
-# chmod +x /usr/local/bin/sphp
-# Example: sphp 7.4
-
 # also you could install "xdebug on/off toggle" (first install xdebug with pecl and create its own config file here: /usr/local/etc/php/{version}/conf.d/ext-xdebug.ini
 # curl -L https://gist.githubusercontent.com/rhukster/073a2c1270ccb2c6868e7aced92001cf/raw > /usr/local/bin/xdebug
 # chmod +x /usr/local/bin/xdebug

@@ -8,7 +8,12 @@ export DOTFILES=$HOME/.dotfiles
 export ZSH=$HOME/.oh-my-zsh
 
 # Enable completions
+fpath=(~/.stripe $fpath)
 autoload -Uz compinit && compinit
+
+# Terraform completions
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
 
 # Minimal - Theme Settings
 export MNML_INSERT_CHAR="$"

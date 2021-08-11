@@ -7,7 +7,7 @@ export DOTFILES=$HOME/.dotfiles
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Enable completions
+# Stripe completions
 fpath=(~/.stripe $fpath)
 autoload -Uz compinit && compinit
 

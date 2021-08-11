@@ -29,10 +29,7 @@ pecl install memcached imagick xdebug
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Create a Sites directory
-# This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
-mkdir $HOME/Workspace
+# Create a code/projects directory
 mkdir $HOME/code
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles

@@ -13,9 +13,8 @@ alias vimrc="vim $HOME/.vimrc"
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
 alias dev="cd $HOME/code"
-alias workspace="cd $HOME/Workspace"
+alias workspace="cd $HOME/Workspace" # Work specific
 
 # Files
 alias make1mb="mkfile 1m ./1MB.dat"
@@ -35,12 +34,7 @@ alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
 alias phpunit="vendor/bin/phpunit"
 alias phpunitw="phpunit-watcher watch"
 alias p="phpunit"
-alias pf="phpunit --filter "
-
-# also you could install "xdebug on/off toggle" (first install xdebug with pecl and create its own config file here: /usr/local/etc/php/{version}/conf.d/ext-xdebug.ini
-# curl -L https://gist.githubusercontent.com/rhukster/073a2c1270ccb2c6868e7aced92001cf/raw > /usr/local/bin/xdebug
-# chmod +x /usr/local/bin/xdebug
-# Example: xdebug on
+alias pf="phpunit --filter"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
@@ -62,7 +56,7 @@ alias push="git push"
 alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
-alias wip="commit wip"
+alias wip="commit '--wip-- [skip-cli]"
 
 # Apache
 alias httpconfig="nano /usr/local/etc/httpd/httpd.conf"

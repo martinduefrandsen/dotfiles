@@ -68,3 +68,13 @@ alias ip="curl https://diagnostic.opendns.com/myip ; echo"
 alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias openports="sudo lsof -i | grep LISTEN"
 alias blockedports="sudo ipfw list"
+
+# Terraform
+alias tf="terraform"
+alias tfi="tf init"
+
+alias tfp="tf plan"
+alias tfip="tfi && tfp"
+
+alias tfa="tf apply"
+alias tfia="tfi && tfa"

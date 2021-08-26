@@ -56,7 +56,7 @@ alias push="git push"
 alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
-alias wip="commit '--wip-- [skip-cli]"
+alias wip="commit '--wip-- [skip-cli]'"
 
 # Apache
 alias httpconfig="nano /usr/local/etc/httpd/httpd.conf"

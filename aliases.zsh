@@ -32,7 +32,6 @@ alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 alias switch-php80="brew unlink php@7.4 && brew link --overwrite --force php"
 alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
 alias phpunit="vendor/bin/phpunit"
-alias phpunitw="phpunit-watcher watch"
 alias p="phpunit"
 alias pf="phpunit --filter"
 
@@ -78,4 +77,5 @@ alias tfa="tf apply"
 alias tfia="tfi && tfa"
 
 # Docker
-alias dexec="docker exec -it"
+alias dex="docker exec -it"
+alias dps="docker ps"

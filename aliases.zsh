@@ -72,9 +72,10 @@ alias blockedports="sudo ipfw list"
 # Terraform
 alias tf="terraform"
 alias tfi="tf init"
-
 alias tfp="tf plan"
 alias tfip="tfi && tfp"
-
 alias tfa="tf apply"
 alias tfia="tfi && tfa"
+
+# Docker
+alias dexec="docker exec -it"

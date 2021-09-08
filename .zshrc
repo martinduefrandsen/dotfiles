@@ -126,7 +126,7 @@ export GREP_OPTIONS="--color=auto"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Make a silly saying on new terminal
-fortune | cowsay | lolcat
+fortune -s | cowsay -f dragon | lolcat
 
 # Blank line
 echo

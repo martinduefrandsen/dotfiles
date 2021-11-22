@@ -23,12 +23,6 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 # Install PHP extensions with PECL
 pecl install memcached imagick xdebug
 
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
 # Create a code/projects directory
 mkdir $HOME/code
 

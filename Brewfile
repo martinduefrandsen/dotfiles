@@ -52,14 +52,13 @@ cask 'firefox'
 cask 'github'
 cask 'google-chrome'
 cask 'insomnia'
-cask 'notion'
 cask 'phpstorm'
 cask 'slack'
-cask 'sublime-text'
 # cask 'tableplus' - Disabled because of SetApp subscription
 cask 'visual-studio-code'
 cask 'flux'
 cask 'messenger'
+cask 'signal'
 
 # Quicklook
 cask 'qlcolorcode'

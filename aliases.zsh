@@ -6,6 +6,7 @@ alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-dire
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
+alias hostfile="sudo vi /etc/hosts"
 
 # Vim
 alias vimrc="vim $HOME/.vimrc"

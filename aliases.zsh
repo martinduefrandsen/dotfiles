@@ -30,9 +30,11 @@ alias seed="php artisan db:seed"
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
-alias switch-php="brew unlink php@7.4 && brew link --overwrite --force php"
+alias switch-php="brew unlink php@7.4 && brew link --overwrite --force php" # Latest
+alias switch-php80="brew unlink php && brew link --overwrite --force php@8.0"
 alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
 alias switch-php73="brew unlink php && brew link --overwrite --force php@7.3"
+alias switch-php71="brew unlink php && brew link --overwrite --force php@7.1" # Yikes
 alias phpunit="vendor/bin/phpunit"
 alias p="phpunit"
 alias pf="phpunit --filter"

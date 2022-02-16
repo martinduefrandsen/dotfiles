@@ -11,6 +11,9 @@ export ZSH=$HOME/.oh-my-zsh
 fpath=(~/.stripe $fpath)
 autoload -Uz compinit && compinit
 
+# Kubernetes completions
+source <(kubectl completion zsh)
+
 # Terraform completions
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform

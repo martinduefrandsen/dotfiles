@@ -34,9 +34,6 @@ alias switch-php80="brew unlink php && brew link --overwrite --force php@8.0"
 alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
 alias switch-php73="brew unlink php && brew link --overwrite --force php@7.3"
 alias switch-php71="brew unlink php && brew link --overwrite --force php@7.1" # Yikes
-alias phpunit="vendor/bin/phpunit"
-alias p="phpunit"
-alias pf="phpunit --filter"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"

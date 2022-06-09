@@ -25,7 +25,6 @@ alias make10mb="mkfile 10m ./10MB.dat"
 # Laravel
 alias a="php artisan"
 alias fresh="php artisan migrate:fresh --seed"
-alias seed="php artisan db:seed"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
@@ -41,7 +40,6 @@ alias pf="phpunit --filter"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
-alias watch="npm run watch"
 
 # Git
 alias gst="git status"
